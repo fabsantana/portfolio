@@ -5,3 +5,15 @@ h1, h2, h3, h4, h5 ,h6, .section-header {
 p, span {
     font-family: 'IBM Plex Sans', serif;
 }
+
+.intro .section-header {
+    font-size: clamp(2rem, 7vw, 7rem);
+}
+.intro p {
+    font-size: clamp(1rem, 2vw, 7rem);
+}
+
+.section-header {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-weight: 700;
+}

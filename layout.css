@@ -1,0 +1,22 @@
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.intro {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.intro .container div {
+    text-align: center;
+}
+
