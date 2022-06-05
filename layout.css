@@ -1,5 +1,10 @@
 main {
-    padding: 20px;
+    padding-inline: 20px;
+    margin: 0 auto;
+}
+
+img {
+    margin: 0 auto;
 }
 
 section {
@@ -8,6 +13,14 @@ section {
 
 .container {
     text-align: center;
+}
+
+.section-header {
+    display: block;
+    margin-bottom: 15px;
+}
+.section-header.hero {
+    margin-bottom: 0;
 }
 
 .intro {
@@ -20,3 +33,68 @@ section {
     text-align: center;
 }
 
+.about .me {
+    max-width: 285px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 0.9em;
+}
+
+.contact p {
+    font-size: 0.9em;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 15px;
+}
+
+.icon-link,
+svg {
+    display: block;
+    max-width: 30px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+svg:hover,
+svg:active {
+    transform: scale(1.4);
+    fill: blue;
+}
+
+@media screen and (min-width: 767px) {
+    .about-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+    .about .me {
+        max-width: 285px;
+        width: 100%;
+        margin: 0;
+    }
+    .about-paragraph-wrapper {
+        text-align: left;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+    
+    .contact p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        max-width: 1200px;
+    }
+}

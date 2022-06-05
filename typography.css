@@ -1,19 +1,27 @@
-h1, h2, h3, h4, h5 ,h6, .section-header {
+h1, h2, h3, h4, h5 ,h6, .section-header, .skills-header, .learning-header {
     font-family: 'IBM Plex Serif', sans-serif;
 }
 
-p, span {
+p, span, li {
     font-family: 'IBM Plex Sans', serif;
+}
+p, li {
+    color: rgb(105, 105, 105);
 }
 
 .intro .section-header {
-    font-size: clamp(2rem, 7vw, 7rem);
+    font-size: clamp(2rem, 7vw, 6rem);
 }
 .intro p {
-    font-size: clamp(1rem, 2vw, 7rem);
+    font-size: clamp(0.9rem, 2vw, 7rem);
 }
 
 .section-header {
     font-size: clamp(1.5rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.skills-header,
+.learning-header {
     font-weight: 700;
 }
