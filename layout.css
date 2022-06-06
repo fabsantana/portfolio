@@ -34,18 +34,31 @@ section {
     text-align: center;
 }
 
+.about {
+    margin-bottom: 0;
+}
+
 .about .me {
     max-width: 285px;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 6px;
 }
 
 .about p {
     font-size: 0.9em;
 }
 
+.list-wrapper {
+    margin-bottom: 15px;
+}
+
 ul {
     padding: 0;
+}
+
+.contact {
+    padding-bottom: 50px;
 }
 
 .contact p {
@@ -61,17 +74,21 @@ ul {
 }
 
 .icon-link,
-svg {
+.icon {
     display: block;
     max-width: 30px;
     width: 100%;
     transition: 0.5s;
 }
 
-svg:hover,
-svg:active {
+.icon:hover,
+.icon:active {
     transform: scale(1.4);
     fill: blue;
+}
+
+footer {
+    padding-inline: 20px;
 }
 
 @media screen and (min-width: 767px) {
@@ -95,6 +112,21 @@ svg:active {
     
     .contact p {
         font-size: 1em;
+    }
+    
+    .skills-header,
+    .learning-header {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    
+    .skills-list,
+    .learning-list {
+        display: flex;
+        gap: 5rem;
+        margin-left: 15px;
+        font-size: 1.1rem;
     }
 }
 
