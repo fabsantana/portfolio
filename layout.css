@@ -26,7 +26,8 @@ section {
 .intro {
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    height: 100vh;
 }
 
 .intro .container div {
@@ -41,6 +42,10 @@ section {
 
 .about p {
     font-size: 0.9em;
+}
+
+ul {
+    padding: 0;
 }
 
 .contact p {
