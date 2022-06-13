@@ -53,6 +53,13 @@ section {
     margin-bottom: 15px;
 }
 
+.skills-list,
+.learning-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ul {
     padding: 0;
 }
@@ -95,10 +102,11 @@ footer {
     .about-wrapper {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         gap: 3em;
     }
     .about .me {
-        max-width: 285px;
+        min-width: 285px;
         width: 100%;
         margin: 0;
     }
@@ -124,7 +132,9 @@ footer {
     .skills-list,
     .learning-list {
         display: flex;
-        gap: 5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
         margin-left: 15px;
         font-size: 1.1rem;
     }
