@@ -104,9 +104,15 @@ svg path {
 .hand-wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   transform-origin: 70% 70%; 
   display: inline-block;
+}
+
+.hand-wave:hover {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes wave-animation {

@@ -122,19 +122,18 @@ footer {
         font-size: 1em;
     }
     
-    .skills-header,
-    .learning-header {
+    .skills-header {
         display: block;
         margin-bottom: 10px;
         font-size: 1.2rem;
     }
     
-    .skills-list,
-    .learning-list {
+    .skills-list {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 4rem;
+        column-gap: 4rem;
+        row-gap: 1rem;
         margin-left: 15px;
         font-size: 1.1rem;
     }
